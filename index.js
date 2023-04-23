@@ -29,7 +29,11 @@ app.post('/', async function(req,res){
     }
 })
 
+
+app.use('/api/books', require('./books/books.api'))
+
 app.listen(3000, function(){
     console.log("Server started on port 3000");
 })
+
 
